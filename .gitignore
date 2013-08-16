@@ -16,3 +16,8 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# IntelliJ Files
+*.iml
+.idea
+atlassian-ide-plugin.xml

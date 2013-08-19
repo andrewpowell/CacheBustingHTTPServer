@@ -44,6 +44,10 @@ class NonCachingFileHandler < WEBrick::HTTPServlet::FileHandler
       when "html" then "text/html"
       when "js" then "text/javascript"
       when "css","less" then "text/css"
+      when "png" then "image/png"
+      when "gif" then "image/gif"
+      when "jpg","jpeg" then "image/jpeg"
+      when "bmp" then "image/x-ms-bmp"
       else '/usr/bin/file --brief --mime-type #{Shellwords.escape(path)}'.chomp
     end
   end
